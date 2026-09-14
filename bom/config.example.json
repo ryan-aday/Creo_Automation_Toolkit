@@ -1,0 +1,55 @@
+{
+  "host": "localhost",
+  "port": 9056,
+  "creo_version": 11,
+  "output": "creo_assembly_mass_report.xlsx",
+  "thumbnail_dir": "creo_report_thumbnails",
+  "thumbnails": false,
+  "thumbnail_width": 3.0,
+  "thumbnail_height": 3.0,
+  "thumbnail_dpi": 100,
+  "thumbnail_views": [
+    "ISO",
+    "ISOMETRIC",
+    "TRIMETRIC",
+    "DEFAULT"
+  ],
+  "report_unit": null,
+  "high_mass_warning": 50.0,
+  "include_skeletons": false,
+  "owner_parameters": [
+    "OWNER",
+    "DESIGNER",
+    "DRAWN_BY",
+    "PTC_WM_CREATED_BY"
+  ],
+  "creator_parameters": [
+    "PTC_WM_CREATED_BY",
+    "CREATED_BY",
+    "CREATOR"
+  ],
+  "modifier_parameters": [
+    "PTC_WM_MODIFIED_BY",
+    "MODIFIED_BY",
+    "LAST_MODIFIED_BY"
+  ],
+  "created_on_parameters": [
+    "PTC_WM_CREATED_ON",
+    "CREATED_ON"
+  ],
+  "modified_on_parameters": [
+    "PTC_WM_MODIFIED_ON",
+    "MODIFIED_ON"
+  ],
+  "categories": {
+    "FASTENER": [
+      "NAS"
+    ],
+    "ASE": [
+      "ASE"
+    ],
+    "HARNESS": [
+      "HARNESS"
+    ]
+  }
+}

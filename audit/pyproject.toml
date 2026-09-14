@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creo-geometry-audit"
+version = "0.1.0"
+description = "Creo/CREOSON geometry quality audit with Trimesh analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "creopyson==0.7.8",
+  "trimesh[easy]>=5.1,<6",
+  "cascadio>=0.1.1,<0.2",
+  "manifold3d>=3,<4",
+  "numpy>=1.26,<3",
+  "scipy>=1.12,<2",
+  "pandas>=2.2,<3",
+  "plotly>=5.24,<7",
+  "streamlit>=1.42,<2",
+]
+
+[project.optional-dependencies]
+collision = ["python-fcl>=0.7.0.8"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+creo-audit = "creo_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["creo_audit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

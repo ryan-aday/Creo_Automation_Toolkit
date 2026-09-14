@@ -1,0 +1,37 @@
+{
+  "model_path": "C:/Creo_Work/gearbox.asm",
+  "creoson_host": "localhost",
+  "creoson_port": 9056,
+  "creo_version": 11,
+  "export_directory": "audit_output",
+  "minimum_global_gap": 0.25,
+  "minimum_face_area": 0.05,
+  "interference_volume_tolerance": 1e-9,
+  "contact_tolerance": 1e-7,
+  "distance_samples": 5000,
+  "default_material_names": ["", "DEFAULT", "_NO_MATL_SET", "NO_MATERIAL"],
+  "material_tag_parameter": "_NO_MATL_SET",
+  "cte_parameter_names": ["CTE", "ALPHA", "THERMAL_EXPANSION_COEFFICIENT"],
+  "cte_parameter_scale": 1e-6,
+  "reference_temperature": 20.0,
+  "operating_temperature": 100.0,
+  "thermal_anchor": "centroid",
+  "material_library": {
+    "AL_6061_T6": {"cte_per_k": 2.36e-5, "source": "representative; verify approved specification"},
+    "TI_6AL_4V": {"cte_per_k": 8.6e-6, "source": "representative; verify approved specification"}
+  },
+  "gap_rules": [
+    {
+      "body_a": "housing",
+      "body_b": "shaft",
+      "patch_a": null,
+      "patch_b": null,
+      "minimum": 0.15,
+      "maximum": 0.35,
+      "target": null,
+      "tolerance": null,
+      "stack_closure": 0.05,
+      "description": "Radial running clearance after worst-case manufacturing closure"
+    }
+  ]
+}

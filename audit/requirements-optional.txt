@@ -1,0 +1,4 @@
+# Faster, more exact triangle-mesh collision and distance queries when a wheel
+# is available for your Python/Windows combination.
+python-fcl>=0.7.0.8
+

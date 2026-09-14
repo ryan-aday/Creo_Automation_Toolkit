@@ -1,0 +1,4 @@
+creopyson>=0.7.8
+openpyxl>=3.1
+Pillow>=10
+tqdm>=4.66
