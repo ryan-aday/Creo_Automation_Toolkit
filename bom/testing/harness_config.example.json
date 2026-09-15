@@ -1,0 +1,35 @@
+{
+  "harness_tokens": ["_ROUT", "_HARNESS"],
+  "xml_dir": "harness_xml",
+  "density_mode": "auto",
+  "default_length_unit": "mm",
+  "default_mass_unit": "kg",
+  "default_volumetric_density_unit": "kg/m3",
+  "mapkey_template": "cabling_export_mapkey.txt",
+  "mapkey_delay_ms": 1500,
+  "creo_host": "localhost",
+  "creo_port": 9056,
+  "cosmetic_rules": [
+    {
+      "name": "NOMEX_OVERBRAID",
+      "kind": "overbraid",
+      "harness_pattern": "*_ROUT*",
+      "connection_pattern": "*",
+      "thickness_mm": 0.5,
+      "material_density_kg_m3": 1150.0,
+      "coverage_fraction": 0.85,
+      "length_factor": 1.0
+    },
+    {
+      "name": "HARNESS_TAPE",
+      "kind": "tape",
+      "harness_pattern": "*_ROUT*",
+      "connection_pattern": "PWR_*",
+      "thickness_mm": 0.13,
+      "width_mm": 19.0,
+      "material_density_kg_m3": 1200.0,
+      "overlap_fraction": 0.5,
+      "length_factor": 1.0
+    }
+  ]
+}
